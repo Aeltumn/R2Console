@@ -783,7 +783,7 @@ void fn_vBackspaceCharAtCaret( void )
 
 BOOL fn_bProcessKey( DWORD dwKeyCode )
 {
-	if ( dwKeyCode == VK_OEM_3 )
+	if ( dwKeyCode == VK_OEM_3 || dwKeyCode == VK_F3 )
 	{
 		g_bTinyMode = GetKeyState(VK_SHIFT) & 0x8000 ? TRUE : FALSE;
 		fn_vShowConsole();
